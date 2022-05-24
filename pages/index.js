@@ -4,8 +4,6 @@ import App from './_app'
 
 export default function Home() {
   return (
-    <App>
-
     <div className="container">
       <Head>
         <title>Create Next App</title>
@@ -211,6 +209,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-    </App>
   )
 }

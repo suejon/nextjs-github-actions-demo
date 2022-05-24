@@ -5,14 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Running validation"
-  Scan:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Running code scanning"
   Build:
     runs-on: ubuntu-latest
+    container:
+      image: node:latest
     steps:
-      - run: echo "Running build"
+      - run: npm --version
   Deploy:
     runs-on: ubuntu-latest
     steps:
