@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import App from './_app'
 
 export default function Home() {
   return (
