@@ -1,7 +1,11 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import App from './_app'
 
 export default function Home() {
   return (
+    <App>
+
     <div className="container">
       <Head>
         <title>Create Next App</title>
@@ -10,7 +14,9 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Learn <a href="https://nextjs.org">Next.js!</a>
+          <Link href="/posts/first-post">
+            <a>First Post</a>
+          </Link>
         </h1>
 
         <p className="description">
@@ -205,5 +211,6 @@ export default function Home() {
         }
       `}</style>
     </div>
+    </App>
   )
 }
